@@ -1,0 +1,149 @@
+@use 'vars' as v;
+// HEAD
+.head {
+    color: v.$white-color;
+    min-height:  100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background: url(/src/img/symbol.svg) no-repeat center/auto 100%;
+    
+		// .head__header
+
+		&__header {
+		}
+
+		// .head__title
+
+		&__title {
+            font-weight: 700;
+            font-size: 38px;
+            padding: 0 30px;
+            text-align: center;
+            line-height: 1.3;
+		}
+
+		// .head__link
+
+		&__link {
+            width: 42px;
+            height: 42px;
+            border-radius: v.$rounded-full;
+            border: 2px solid v.$white-color;
+            position: relative;
+            margin: 0 auto 30px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 12px;
+                top: 9px;
+                width: 14px;
+                height: 14px;
+                border-bottom: 2px solid v.$white-color;
+                border-right: 2px solid v.$white-color;
+                transform: rotate(45deg);
+            }
+		}
+}
+// HEADER
+.header {
+
+		// .header__container
+
+		&__container {
+		}
+
+		// .header__inner
+
+		&__inner {
+            display: flex;
+		}
+
+		// .header__lang
+
+		&__lang {
+            display: flex;
+		}
+
+		// .header__lang-item
+
+		&__lang-item {
+		}
+
+		// .header__lang-link
+
+		&__lang-link {
+            color: inherit;
+            text-decoration: none;
+		}
+
+		// .header__address
+
+		&__address {
+		}
+
+		// .header__phone
+
+		&__phone {
+		}
+
+		// .header__social
+
+		&__social {
+		}
+
+		// .header__social-svg
+
+		&__social-svg {
+            height: 24px;
+            width: 24px;
+            fill: v.$white-color;
+		}
+
+		// .header__box
+
+		&__box {
+            display: flex;
+		}
+
+		// .header__box-hlegal
+
+		&__box-hlegal {
+		}
+
+		// .header__box-logo
+
+		&__box-logo {
+		}
+
+		// .header__box-burger
+
+		&__box-burger {
+            display: none;
+		}
+
+		// .header__nav
+
+		&__nav {
+		}
+
+		// .header__nav-list
+
+		&__nav-list {
+            display: flex;
+		}
+
+		// .header__nav-item
+
+		&__nav-item {
+		}
+
+		// .header__nav-link
+
+		&__nav-link {
+            color: inherit;
+            text-decoration: none;
+		}
+}
+
